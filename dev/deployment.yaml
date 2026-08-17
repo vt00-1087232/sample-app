@@ -1,4 +1,4 @@
-iapiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: development-deployment
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: dev-container
-        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-01-a9564268dde1/my-repository/sample-app:v1.
+        image: europe-west1-docker.pkg.dev/qwiklabs-gcp-01-a9564268dde1/my-repository/sample-app:v1.0
         ports:
         - containerPort: 8080
